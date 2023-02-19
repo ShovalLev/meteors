@@ -12,7 +12,12 @@ const Search: React.FC<SearchProps> = ({ pickedDate, filterText, onPickDate, set
                     value={filterText}
                     onChange={(e: ChangeEvent<HTMLInputElement>) => setFilterText(e.target.value)}
                 />
-                <StyledDatePicker maxDetail='decade' key={pickedDate?.toString()} onChange={onPickDate} value={pickedDate} />
+                <StyledDatePicker
+                    maxDetail='decade'
+                    key={pickedDate?.toString()}
+                    onChange={onPickDate}
+                    value={pickedDate}
+                />
             </SearchBox>
         </SerachBoxContainer>
     )
