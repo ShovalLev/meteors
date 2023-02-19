@@ -7,7 +7,9 @@ const SearchResult: React.FC<SearchResultProps> = ({ filteredMeteors }) => {
     return (
         <SearchResultContainer>
             <MeteorsCounter>
-                <MeteorCounterText style={{color: 'white'}}>Number of Meteors: {filteredMeteors.length}</MeteorCounterText>
+                <MeteorCounterText style={{color: 'white'}}>
+                    Number of Meteors: {filteredMeteors.length}
+                </MeteorCounterText>
             </MeteorsCounter>
             <MeteorsDetails>
                 {filteredMeteors.map((meteor) => (
